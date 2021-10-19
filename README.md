@@ -1,6 +1,6 @@
 # cms-project-page
 
-Página criada para fins didáticos!
+Criando um site utilizando WordPress.
 
 ######################################################################
 
