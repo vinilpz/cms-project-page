@@ -22,3 +22,23 @@ register_nav_menus(
         'footer_menu' => 'Footer Menu'
     )
 );
+
+// Função de configuração do Tema.
+
+function wpCurseConfig()
+{
+    register_nav_menus(
+        array(
+            'my_main_menu' => 'Main Menu',
+            'footer_menu' => 'Footer Menu'
+        )
+    );
+    $args = array(
+        'height' => 225,
+        'width' => 1920
+    );
+    add_theme_support('custom-header', $args);
+    add_theme_support('post-thumbnails');
+}
+
+add_action('after_setup_theme', 'wpCurseConfig', 0);

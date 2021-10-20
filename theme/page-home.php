@@ -1,11 +1,9 @@
 <?php get_header() ?>
-<img class=" img-fluid" src="<?php header_image(); ?>" height="<?php echo get_custom_header()->height; ?>"
-     width="<?php echo get_custom_header()->width; ?>" alt=""/>
 <div class="content-area">
     <main>
         <section class="slide">
             <div class="container">
-                <div class="row">Slide</div>
+                <div class="row">Slides</div>
             </div>
         </section>
         <section class="services">
@@ -24,11 +22,6 @@
                                 ?>
                                 <article>
                                     <h2><?php the_title(); ?></h2>
-                                    <?php the_post_thumbnail(array  (275, 275)); ?>
-                                    <p>Published in <?php echo get_the_date(); ?>
-                                        <?php the_author_posts_link(); ?> </p>
-                                    <p>Categories: <?php the_category(''); ?></p>
-                                    <p><?php the_tags(' Tags: ', ','); ?></p>
                                     <?php the_content(); ?>
                                 </article>
                             <?php
